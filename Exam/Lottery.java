@@ -71,6 +71,8 @@ public class Lottery {
 					hiddenBudget += 50;
 				}
 				tickets.remove(index);
+				if (tickets.size() == 0)
+					return;
 				System.out.println(
 						"Баланс:" + clientBudget + " Джекпот:" + budget + " Скрытый баланс казино:" + hiddenBudget);
 				if (clientBudget < 100) {
