@@ -72,7 +72,10 @@ public class Lottery {
 				}
 				tickets.remove(index);
 				if (tickets.size() == 0)
+				{
+					System.out.println("Билеты закончились, приходите в след. месяце :)");
 					return;
+				}
 				System.out.println(
 						"Баланс:" + clientBudget + " Джекпот:" + budget + " Скрытый баланс казино:" + hiddenBudget);
 				if (clientBudget < 100) {
