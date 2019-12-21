@@ -71,8 +71,7 @@ public class Lottery {
 					hiddenBudget += 50;
 				}
 				tickets.remove(index);
-				if (tickets.size() == 0)
-				{
+				if (tickets.size() == 0) {
 					System.out.println("Билеты закончились, приходите в след. месяце :)");
 					return;
 				}
@@ -82,8 +81,7 @@ public class Lottery {
 					System.out.println("Вы бедняк, пока.");
 					return;
 				}
-			}
-			else {
+			} else {
 				System.out.println("Вы ушли!\nБаланс:" + clientBudget + " Джекпот:" + budget + " Скрытый баланс казино:"
 						+ hiddenBudget);
 				return;
